@@ -1,0 +1,8 @@
+from django.contrib import admin
+from django.urls import path
+from todo.views import get_todo_list
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', get_todo_list),
+]
