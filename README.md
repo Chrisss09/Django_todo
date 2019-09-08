@@ -1,1 +1,1 @@
-My Django todo list
+# My Django todo list
