@@ -14,7 +14,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get('HOSTNAME')]
+ALLOWED_HOSTS = ['chris-todo-siteapp.herokuapp.com']
 
 
 # Application definition
