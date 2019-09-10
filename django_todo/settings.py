@@ -14,7 +14,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [os.environ.get('HOSTNAME')]
 
 
 # Application definition
@@ -112,6 +112,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 try:
-    from .local_settings import SECRET_KEY
+    from .local_settings import *
 except ImportError:
     pass
